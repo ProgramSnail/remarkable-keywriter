@@ -11,7 +11,7 @@ jobs:
       
       - uses: awalsh128/cache-apt-pkgs-action@latest
         with:
-          packages: curl xz-utils python git golang-go wget
+          packages: curl xz-utils python git golang-go wget qtcreator
           version: 1.0
 
       - name: pull submodules
@@ -29,20 +29,6 @@ jobs:
         run: |
             locale
             ./install-toolchain.sh
-
-      - name: Install qtcreator
-        run: apt-get install -y qtcreator
-
-      - name: Install ghr before sourcing new toolchain
-        run: |
-            wget https://dl.google.com/go/go1.14.2.linux-amd64.tar.gz
-            tar -xvf go1.14.2.linux-amd64.tar.gz
-            mv go /usr/local/
-            export GOROOT=/usr/local/go
-            mkdir -p ./go
-            export GOPATH=`pwd`/go
-            export PATH=$GOPATH/bin:$GOROOT/bin:$PATH
-            go get -u github.com/tcnksm/ghr
 
       - name: Build
         run: |
