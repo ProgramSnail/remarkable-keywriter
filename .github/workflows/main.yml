@@ -40,5 +40,6 @@ jobs:
         run: find .
 
       - uses: actions/upload-artifact@v2
-        with: 
+        with:
+          name: keywriter
           path: edit
