@@ -8,9 +8,11 @@ jobs:
 
     steps:
       - uses: actions/checkout@v2
-
-      - name: Install apt packages needed for build
-        run: apt-get install -y curl xz-utils python git golang-go bsdtar wget
+      
+      - uses: awalsh128/cache-apt-pkgs-action@latest
+        with:
+          packages: curl xz-utils python git golang-go bsdtar wget
+          version: 1.0
 
       - name: pull submodules
         run: |
