@@ -33,7 +33,7 @@ jobs:
       - name: Build
         run: |
           source /opt/codex/rm1/4.0.117/environment-setup-cortexa9hf-neon-remarkable-linux-gnueabi
-          qmake edit.pro -spec linux-oe-g++
+          qmake edit.pro -spec linux-oe-g++ -qt=qt6
           /usr/bin/make
 
       - name: where are all the files?
