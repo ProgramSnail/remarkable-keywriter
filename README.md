@@ -1,6 +1,6 @@
-# remarkable-keywriter [![opkg](https://img.shields.io/badge/OPKG-keywriter-blue)](https://toltec-dev.org/)
+# remarkable-keywriter
 
-master build status: [![CircleCI](https://circleci.com/gh/dps/remarkable-keywriter.svg?style=svg)](https://circleci.com/gh/dps/remarkable-keywriter)
+fork, tryng to build qt 6 version of keywriter
 
 ---
 
