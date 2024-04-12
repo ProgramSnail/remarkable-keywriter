@@ -1,5 +1,4 @@
 QT += quick
-QT += core5compat
 
 CONFIG += c++11
 
@@ -28,7 +27,7 @@ QML_IMPORT_PATH =
 QML_DESIGNER_IMPORT_PATH =
 
 linux-oe-g++ {
-    LIBS += -L$$PWD -lqsgepaper
+    LIBS += -L$$PWD
 }
 
 # Default rules for deployment.
