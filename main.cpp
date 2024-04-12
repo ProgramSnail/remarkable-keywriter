@@ -2,10 +2,10 @@
 #include <QQmlApplicationEngine>
 #include <QtQuick>
 // Added for reMarkable support
-#include <QtPlugin>
-#ifdef __arm__
-Q_IMPORT_PLUGIN(QsgEpaperPlugin)
-#endif
+// #include <QtPlugin>
+// #ifdef __arm__
+// Q_IMPORT_PLUGIN(QsgEpaperPlugin)
+// #endif
 // end reMarkable additions
 #include "edit_utils.h"
 #include <QtQml>
